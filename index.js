@@ -1,0 +1,55 @@
+require("dotenv").config();
+const express = require("express");
+const cors = require("cors");
+const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
+const port = process.env.PORT || 3000;
+const app = express();
+app.use(cors());
+app.use(express.json());
+
+const client = new MongoClient(process.env.MONGODB_URI, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  },
+});
+
+async function run() {
+  try {
+    const db = client.db("LoanLink");
+    const loansCollection = db.collection("loans");
+
+    // ================== ROUTES ==================
+
+    // GET all loans
+    app.get("/loans", async (req, res) => {
+      const loans = await loansCollection.find().toArray();
+      res.send(loans);
+    });
+
+    // get 1 loans from db
+    app.get("/loans/:id", async (req, res) => {
+      const id = req.params.id;
+      const result = await loansCollection.findOne({ _id: new ObjectId(id) });
+      res.send(result);
+    });
+
+    // POST new loan
+    app.post("/loans", async (req, res) => {
+      const loanData = req.body;
+      const result = await loansCollection.insertOne(loanData);
+      res.send(result);
+    });
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+run().catch(console.dir);
+
+app.get("/", (req, res) => {
+  res.send("LoanLink Backend Working");
+});
+
+app.listen(port, () => console.log(`Server running on port ${port}`));

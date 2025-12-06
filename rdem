@@ -1,0 +1,201 @@
+[
+  {
+    "LoanTitle": "Quick Personal Loan",
+    "Description": "Fast and easy personal loans for immediate needs.",
+    "Category": "Personal",
+    "InterestRate": 9.5,
+    "MaxLoanLimit": 500000,
+    "Required Documents": [
+      "Aadhar Card",
+      "PAN Card",
+      "Last 3 months' bank statement"
+    ],
+    "EMIPlans": [
+      "12 Months",
+      "24 Months",
+      "36 Months"
+    ],
+    "ImagesUrl": "https://www.olyv.co.in/wp-content/uploads/2025/01/Olyv__Blogs-7.png",
+    "Date": "2025-12-05T10:00:00Z",
+    "Show on Home toggle": true
+  },
+  {
+    "LoanTitle": "Home Purchase Loan",
+    "Description": "Competitive rates for buying your dream home.",
+    "Category": "Housing",
+    "InterestRate": 7.25,
+    "MaxLoanLimit": 10000000,
+    "Required Documents": [
+      "Proof of Income",
+      "Property Documents",
+      "ID Proof"
+    ],
+    "EMIPlans": [
+      "10 Years",
+      "15 Years",
+      "20 Years"
+    ],
+    "ImagesUrl": "https://intechproperties.com.bd/wp-content/uploads/2022/10/i.webp",
+    "Date": "2025-11-20T15:30:00Z",
+    "Show on Home toggle": true
+  },
+  {
+    "LoanTitle": "Business Expansion Loan",
+    "Description": "Fuel your business growth with our flexible term loans.",
+    "Category": "Business",
+    "InterestRate": 11,
+    "MaxLoanLimit": 2500000,
+    "Required Documents": [
+      "Business Registration Certificate",
+      "GST Returns",
+      "Business Bank Statement"
+    ],
+    "EMIPlans": [
+      "36 Months",
+      "48 Months",
+      "60 Months"
+    ],
+    "ImagesUrl": [
+      "https://bsmedia.business-standard.com/_media/bs/img/article/2024-12/06/full/1733462926-5607.jpg"
+    ],
+    "Date": "2025-12-01T09:15:00Z",
+    "Show on Home toggle": false
+  },
+  {
+    "LoanTitle": "Car Loan - New Vehicle",
+    "Description": "Low-interest loans for brand new cars.",
+    "Category": "Vehicle",
+    "InterestRate": 8.75,
+    "MaxLoanLimit": 1500000,
+    "Required Documents": [
+      "Driving License",
+      "Quotation from Dealer",
+      "Address Proof"
+    ],
+    "EMIPlans": [
+      "4 Years",
+      "5 Years",
+      "7 Years"
+    ],
+    "ImagesUrl": [
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQL54cHmti9bEsXyFTnMK8rHY6DTx6ZH55ftQ&s"
+    ],
+    "Date": "2025-10-15T12:45:00Z",
+    "Show on Home toggle": true
+  },
+  {
+    "LoanTitle": "Education Loan",
+    "Description": "Secure your future with loans for higher education.",
+    "Category": "Education",
+    "InterestRate": 9,
+    "MaxLoanLimit": 5000000,
+    "Required Documents": [
+      "Admission Letter",
+      "Fee Structure",
+      "Co-applicant Income Proof"
+    ],
+    "EMIPlans": [
+      "5 Years",
+      "7 Years",
+      "10 Years"
+    ],
+    "ImagesUrl": [
+      "https://www.omozing.com/wp-content/uploads/2021/06/unnamed.png"
+    ],
+    "Date": "2025-11-05T14:20:00Z",
+    "Show on Home toggle": true
+  },
+  {
+    "LoanTitle": "Used Car Loan",
+    "Description": "Affordable financing for pre-owned vehicles.",
+    "Category": "Vehicle",
+    "InterestRate": 12,
+    "MaxLoanLimit": 800000,
+    "Required Documents": [
+      "Vehicle RC",
+      "Valuation Report",
+      "ID Proof"
+    ],
+    "EMIPlans": [
+      "36 Months",
+      "48 Months"
+    ],
+    "ImagesUrl": "https://d3jbu7vaxvlagf.cloudfront.net/small/v2/category_media/image_17273409181381.jpeg",
+    "Date": "2025-12-04T11:00:00Z",
+    "Show on Home toggle": false
+  },
+  {
+    "LoanTitle": "Marriage Loan",
+    "Description": "Special personal loan package for wedding expenses.",
+    "Category": "Personal",
+    "InterestRate": 10.5,
+    "MaxLoanLimit": 1000000,
+    "Required Documents": [
+      "Proof of Event",
+      "Income Statement"
+    ],
+    "EMIPlans": [
+      "18 Months",
+      "30 Months"
+    ],
+    "ImagesUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwLFw12OzDt4x1lc_b4mNkDHF9_sRCCiz5Nw&s",
+    "Date": "2025-09-28T17:50:00Z",
+    "Show on Home toggle": true
+  },
+  {
+    "LoanTitle": "Loan Against Property (LAP)",
+    "Description": "Get a loan by mortgaging your residential or commercial property.",
+    "Category": "Secured",
+    "InterestRate": 8.5,
+    "MaxLoanLimit": 50000000,
+    "Required Documents": [
+      "Property Title Deeds",
+      "Valuation Certificate",
+      "KYC Documents"
+    ],
+    "EMIPlans": [
+      "10 Years",
+      "15 Years"
+    ],
+    "ImagesUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTybM4fve3MnysaIkhoFt1gD7wbZahB1Jq4Ww&s",
+    "Date": "2025-11-10T08:30:00Z",
+    "Show on Home toggle": false
+  },
+  {
+    "LoanTitle": "Gold Loan",
+    "Description": "Quick cash against your gold ornaments.",
+    "Category": "Secured",
+    "InterestRate": 13,
+    "MaxLoanLimit": 500000,
+    "Required Documents": [
+      "Gold Ornaments",
+      "ID Proof"
+    ],
+    "EMIPlans": [
+      "6 Months",
+      "12 Months"
+    ],
+    "ImagesUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvco_n5jc77czOuwu-Hydt3XOYruI46EsrLw&s",
+    "Date": "2025-12-03T16:00:00Z",
+    "Show on Home toggle": true
+  },
+  {
+    "LoanTitle": "Doctor's Professional Loan",
+    "Description": "Specialized loans for medical practitioners for clinic setup or equipment purchase.",
+    "Category": "Professional",
+    "InterestRate": 10,
+    "MaxLoanLimit": 7500000,
+    "Required Documents": [
+      "Medical License",
+      "Practice Certificate",
+      "Income Proof"
+    ],
+    "EMIPlans": [
+      "60 Months",
+      "84 Months"
+    ],
+    "ImagesUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3jNYw0xrwqPwLu3oBTcTX62ww42CcFLdeUw&s",
+    "Date": "2025-10-25T09:40:00Z",
+    "Show on Home toggle": true
+  }
+]
