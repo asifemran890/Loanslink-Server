@@ -19,6 +19,7 @@ async function run() {
   try {
     const db = client.db("LoanLink");
     const loansCollection = db.collection("loans");
+    const UsersCollection = db.collection("users");
 
     // ================== ROUTES ==================
 
@@ -34,11 +35,46 @@ async function run() {
       const result = await loansCollection.findOne({ _id: new ObjectId(id) });
       res.send(result);
     });
+    // latest loans
+    app.get("/latest-loans", async (req, res) => {
+      const cursor = loansCollection.find().sort({ created_at: -1 }).limit(6);
+      const result = await cursor.toArray();
+      res.send(result);
+    });
 
     // POST new loan
     app.post("/loans", async (req, res) => {
       const loanData = req.body;
       const result = await loansCollection.insertOne(loanData);
+      res.send(result);
+    });
+
+    // save or update a user in db
+    app.post("/user", async (req, res) => {
+      const userData = req.body;
+      console.log(userData);
+      res.send(userData);
+      userData.created_at = new Date().toISOString();
+      userData.last_loggedIn = new Date().toISOString();
+      userData.role = "customer";
+
+      const query = {
+        email: userData.email,
+      };
+      const alreadyExists = await UsersCollection.findOne(query);
+      console.log("User Already Exists---> ", !!alreadyExists);
+      if (alreadyExists) {
+        console.log("Updating user info......");
+        const result = await UsersCollection.updateOne(query, {
+          $set: {
+            last_loggedIn: new Date().toISOString(),
+          },
+        });
+        return res.send(result);
+      }
+
+      console.log("Saving new user info......");
+      const result = await UsersCollection.insertOne(userData);
       res.send(result);
     });
   } catch (error) {
