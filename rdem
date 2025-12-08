@@ -10,11 +10,7 @@
       "PAN Card",
       "Last 3 months' bank statement"
     ],
-    "EMIPlans": [
-      "12 Months",
-      "24 Months",
-      "36 Months"
-    ],
+    "EMIPlans": "1 Years",
     "ImagesUrl": "https://i.ibb.co.com/N20VLKfL/Gemini-Generated-Image-to6mvnto6mvnto6m.png",
     "Date": "2025-12-05T10:00:00Z",
     "Show on Home toggle": true
@@ -30,11 +26,7 @@
       "Property Documents",
       "ID Proof"
     ],
-    "EMIPlans": [
-      "10 Years",
-      "15 Years",
-      "20 Years"
-    ],
+    "EMIPlans": "1 Years",
     "ImagesUrl": "https://i.ibb.co.com/DPhnvS2r/Gemini-Generated-Image-y8tsdiy8tsdiy8ts.png",
     "Date": "2025-11-20T15:30:00Z",
     "Show on Home toggle": true
@@ -50,11 +42,7 @@
       "GST Returns",
       "Business Bank Statement"
     ],
-    "EMIPlans": [
-      "36 Months",
-      "48 Months",
-      "60 Months"
-    ],
+    "EMIPlans": "12 Months",
     "ImagesUrl": [
       "https://i.ibb.co.com/DfcJff0t/Gemini-Generated-Image-lqyxolqyxolqyxol.png"
     ],
@@ -72,11 +60,7 @@
       "Quotation from Dealer",
       "Address Proof"
     ],
-    "EMIPlans": [
-      "4 Years",
-      "5 Years",
-      "7 Years"
-    ],
+    "EMIPlans": "1 Years",
     "ImagesUrl": [
       "https://i.ibb.co.com/842wLPpb/Gemini-Generated-Image-qwpb0sqwpb0sqwpb.png"
     ],
@@ -94,11 +78,7 @@
       "Fee Structure",
       "Co-applicant Income Proof"
     ],
-    "EMIPlans": [
-      "5 Years",
-      "7 Years",
-      "10 Years"
-    ],
+    "EMIPlans": "1 Years",
     "ImagesUrl": [
       "https://i.ibb.co.com/hxJW3y9z/Gemini-Generated-Image-q65pw9q65pw9q65p.png"
     ],
@@ -116,10 +96,7 @@
       "Valuation Report",
       "ID Proof"
     ],
-    "EMIPlans": [
-      "36 Months",
-      "48 Months"
-    ],
+    "EMIPlans": "12 Months",
     "ImagesUrl": "https://i.ibb.co.com/pBrtCCrX/Gemini-Generated-Image-irwnk7irwnk7irwn.png",
     "Date": "2025-12-04T11:00:00Z",
     "Show on Home toggle": false
@@ -134,10 +111,7 @@
       "Proof of Event",
       "Income Statement"
     ],
-    "EMIPlans": [
-      "18 Months",
-      "30 Months"
-    ],
+    "EMIPlans": "12 Months",
     "ImagesUrl": "https://i.ibb.co.com/nNwVShhF/Gemini-Generated-Image-k8q9fwk8q9fwk8q9.png",
     "Date": "2025-09-28T17:50:00Z",
     "Show on Home toggle": true
@@ -153,10 +127,7 @@
       "Valuation Certificate",
       "KYC Documents"
     ],
-    "EMIPlans": [
-      "10 Years",
-      "15 Years"
-    ],
+    "EMIPlans": "1 Years",
     "ImagesUrl": "https://i.ibb.co.com/rfN2Hcwt/Gemini-Generated-Image-31ppbt31ppbt31pp.png",
     "Date": "2025-11-10T08:30:00Z",
     "Show on Home toggle": false
@@ -171,10 +142,7 @@
       "Gold Ornaments",
       "ID Proof"
     ],
-    "EMIPlans": [
-      "6 Months",
-      "12 Months"
-    ],
+    "EMIPlans": "12 Months",
     "ImagesUrl": "https://i.ibb.co.com/vCCsccdT/Gemini-Generated-Image-2nuoas2nuoas2nuo.png",
     "Date": "2025-12-03T16:00:00Z",
     "Show on Home toggle": true
@@ -190,10 +158,7 @@
       "Practice Certificate",
       "Income Proof"
     ],
-    "EMIPlans": [
-      "60 Months",
-      "84 Months"
-    ],
+    "EMIPlans": "12 Months",
     "ImagesUrl": "https://i.ibb.co.com/kVJ55Bhy/Gemini-Generated-Image-fd2fh9fd2fh9fd2f.png",
     "Date": "2025-10-25T09:40:00Z",
     "Show on Home toggle": true

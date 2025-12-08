@@ -4,7 +4,13 @@ const cors = require("cors");
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");
 const port = process.env.PORT || 3000;
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "http://localhost:5174"],
+    credentials: true,
+    optionSuccessStatus: 200,
+  })
+);
 app.use(express.json());
 
 const client = new MongoClient(process.env.MONGODB_URI, {
@@ -20,13 +26,16 @@ async function run() {
     const db = client.db("LoanLink");
     const loansCollection = db.collection("loans");
     const UsersCollection = db.collection("users");
-
-    // ================== ROUTES ==================
+    const LoanApplicationCollection = db.collection("loanapplication");
 
     // GET all loans
     app.get("/loans", async (req, res) => {
       const loans = await loansCollection.find().toArray();
       res.send(loans);
+    });
+    app.get("/loanapplication", async (req, res) => {
+      const loan = await LoanApplicationCollection.find().toArray();
+      res.send(loan);
     });
 
     // get 1 loans from db
@@ -56,8 +65,7 @@ async function run() {
       res.send(userData);
       userData.created_at = new Date().toISOString();
       userData.last_loggedIn = new Date().toISOString();
-      userData.role = "customer";
-
+      userData.role = "custome";
       const query = {
         email: userData.email,
       };
@@ -75,6 +83,34 @@ async function run() {
 
       console.log("Saving new user info......");
       const result = await UsersCollection.insertOne(userData);
+      res.send(result);
+    });
+
+    // get a user's role
+    app.get("/user/role/:email", async (req, res) => {
+      const email = req.params.email;
+      const result = await UsersCollection.findOne({ email });
+      res.send({ role: result?.role });
+    });
+    //loan application
+    app.post("/loanapplication", async (req, res) => {
+      const userLoanData = req.body;
+      console.log(userLoanData);
+      res.send(userLoanData);
+      userLoanData.Status = "Pending";
+      userLoanData.ApplicationFeeStatus = "unpaid";
+      // const query = {
+      //   email: userLoanData.email,
+      // };
+      // const alreadyExists = await LoanApplicationCollection.findOne(query);
+      // console.log("User Already Exists---> ", !!alreadyExists);
+      // if (alreadyExists) {
+      //   console.log("Updating user info......");
+      //   const result = await LoanApplicationCollection.updateOne(query, {});
+      //   return res.send(result);
+      // }
+      console.log("Saving new user info......");
+      const result = await LoanApplicationCollection.insertOne(userLoanData);
       res.send(result);
     });
   } catch (error) {
