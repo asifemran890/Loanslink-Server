@@ -3,6 +3,7 @@
     "LoanTitle": "Quick Personal Loan",
     "Description": "Fast and easy personal loans for immediate needs.",
     "Category": "Personal",
+    "email": "asif890@gmail.com",
     "InterestRate": 9.5,
     "MaxLoanLimit": 500000,
     "Required Documents": [
@@ -19,6 +20,7 @@
     "LoanTitle": "Home Purchase Loan",
     "Description": "Competitive rates for buying your dream home.",
     "Category": "Housing",
+    "email": "asif890@gmail.com",
     "InterestRate": 7.25,
     "MaxLoanLimit": 10000000,
     "Required Documents": [
@@ -36,6 +38,7 @@
     "Description": "Fuel your business growth with our flexible term loans.",
     "Category": "Business",
     "InterestRate": 11,
+    "email": "asif890@gmail.com",
     "MaxLoanLimit": 2500000,
     "Required Documents": [
       "Business Registration Certificate",
@@ -54,6 +57,7 @@
     "Description": "Low-interest loans for brand new cars.",
     "Category": "Vehicle",
     "InterestRate": 8.75,
+    "email": "asif890@gmail.com",
     "MaxLoanLimit": 1500000,
     "Required Documents": [
       "Driving License",
@@ -73,6 +77,7 @@
     "Category": "Education",
     "InterestRate": 9,
     "MaxLoanLimit": 5000000,
+    "email": "asif890@gmail.com",
     "Required Documents": [
       "Admission Letter",
       "Fee Structure",
@@ -91,6 +96,7 @@
     "Category": "Vehicle",
     "InterestRate": 12,
     "MaxLoanLimit": 800000,
+    "email": "asif890@gmail.com",
     "Required Documents": [
       "Vehicle RC",
       "Valuation Report",
@@ -106,6 +112,7 @@
     "Description": "Special personal loan package for wedding expenses.",
     "Category": "Personal",
     "InterestRate": 10.5,
+    "email": "asif890@gmail.com",
     "MaxLoanLimit": 1000000,
     "Required Documents": [
       "Proof of Event",
@@ -122,6 +129,7 @@
     "Category": "Secured",
     "InterestRate": 8.5,
     "MaxLoanLimit": 50000000,
+    "email": "asif890@gmail.com",
     "Required Documents": [
       "Property Title Deeds",
       "Valuation Certificate",
@@ -138,6 +146,7 @@
     "Category": "Secured",
     "InterestRate": 13,
     "MaxLoanLimit": 500000,
+    "email": "asif890@gmail.com",
     "Required Documents": [
       "Gold Ornaments",
       "ID Proof"
@@ -152,6 +161,7 @@
     "Description": "Specialized loans for medical practitioners for clinic setup or equipment purchase.",
     "Category": "Professional",
     "InterestRate": 10,
+    "email": "asif890@gmail.com",
     "MaxLoanLimit": 7500000,
     "Required Documents": [
       "Medical License",

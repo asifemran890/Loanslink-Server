@@ -46,7 +46,7 @@ async function run() {
     });
     // latest loans
     app.get("/latest-loans", async (req, res) => {
-      const cursor = loansCollection.find().sort({ created_at: -1 }).limit(6);
+      const cursor = loansCollection.find().sort({ Date: -1 }).limit(6);
       const result = await cursor.toArray();
       res.send(result);
     });
@@ -99,18 +99,25 @@ async function run() {
       res.send(userLoanData);
       userLoanData.Status = "Pending";
       userLoanData.ApplicationFeeStatus = "unpaid";
-      // const query = {
-      //   email: userLoanData.email,
-      // };
-      // const alreadyExists = await LoanApplicationCollection.findOne(query);
-      // console.log("User Already Exists---> ", !!alreadyExists);
-      // if (alreadyExists) {
-      //   console.log("Updating user info......");
-      //   const result = await LoanApplicationCollection.updateOne(query, {});
-      //   return res.send(result);
-      // }
       console.log("Saving new user info......");
       const result = await LoanApplicationCollection.insertOne(userLoanData);
+      res.send(result);
+    });
+
+    // get all loan for a customer by email
+    app.get("/my-loanapplication/:email", async (req, res) => {
+      const email = req.params.email;
+      const result = await LoanApplicationCollection.find({
+        customeEmail: email,
+      }).toArray();
+      res.send(result);
+    });
+    // get all loan for a customer by email
+    app.get("/manager-loanapplication/:email", async (req, res) => {
+      const email = req.params.email;
+      const result = await LoanApplicationCollection.find({
+        email: email,
+      }).toArray();
       res.send(result);
     });
   } catch (error) {
