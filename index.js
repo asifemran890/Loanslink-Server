@@ -44,6 +44,14 @@ async function run() {
       const result = await loansCollection.findOne({ _id: new ObjectId(id) });
       res.send(result);
     });
+    // delete 1 loans from db
+    app.delete("/loans/:id", async (req, res) => {
+      const id = req.params.id;
+      const query = { _id: new ObjectId(id) };
+      const result = await loansCollection.deleteOne(query);
+      res.send(result);
+    });
+
     // latest loans
     app.get("/latest-loans", async (req, res) => {
       const cursor = loansCollection.find().sort({ Date: -1 }).limit(6);
@@ -57,7 +65,10 @@ async function run() {
       const result = await loansCollection.insertOne(loanData);
       res.send(result);
     });
-
+    app.get("/user", async (req, res) => {
+      const loan = await UsersCollection.find().toArray();
+      res.send(loan);
+    });
     // save or update a user in db
     app.post("/user", async (req, res) => {
       const userData = req.body;
@@ -103,7 +114,27 @@ async function run() {
       const result = await LoanApplicationCollection.insertOne(userLoanData);
       res.send(result);
     });
+    app.put("/loanapplication/:id", async (req, res) => {
+      const { id } = req.params;
+      const updateData = req.body;
 
+      try {
+        const updatedLoan = await LoanApplicationCollection.findByIdAndUpdate(
+          id,
+          updateData,
+          {
+            new: true,
+          }
+        );
+        if (!updatedLoan) {
+          return res.status(404).json({ message: "Loan not found" });
+        }
+        res.json(updatedLoan);
+      } catch (err) {
+        console.error("Error updating loan:", err);
+        res.status(500).json({ message: "Server error", error: err.message });
+      }
+    });
     // get all loan for a customer by email
     app.get("/my-loanapplication/:email", async (req, res) => {
       const email = req.params.email;
