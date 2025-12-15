@@ -100,7 +100,7 @@ async function run() {
       res.send(result);
     });
 
-    // get a user's role
+    // get a users role
     app.get("/user/role/:email", async (req, res) => {
       const email = req.params.email;
       const result = await UsersCollection.findOne({ email });
