@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"],
+    origin: ["http://localhost:5173", "http://localhost:5174","https://dashing-clafoutis-bb0c48.netlify.app"],
     credentials: true,
     optionSuccessStatus: 200,
   })
