@@ -37,7 +37,6 @@ async function run() {
       const loan = await LoanApplicationCollection.find().toArray();
       res.send(loan);
     });
-
     // get 1 loans from db
     app.get("/loans/:id", async (req, res) => {
       const id = req.params.id;
@@ -51,7 +50,6 @@ async function run() {
       const result = await loansCollection.deleteOne(query);
       res.send(result);
     });
-
     // latest loans
     app.get("/latest-loans", async (req, res) => {
       const cursor = loansCollection.find().sort({ Date: -1 }).limit(6);
@@ -65,6 +63,7 @@ async function run() {
       const result = await loansCollection.insertOne(loanData);
       res.send(result);
     });
+    //get user
     app.get("/user", async (req, res) => {
       const loan = await UsersCollection.find().toArray();
       res.send(loan);
@@ -114,6 +113,7 @@ async function run() {
       const result = await LoanApplicationCollection.insertOne(userLoanData);
       res.send(result);
     });
+    //put loans application
     app.put("/loanapplication/:id", async (req, res) => {
       const { id } = req.params;
       const updateData = req.body;
