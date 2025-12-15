@@ -147,7 +147,7 @@ async function run() {
       }).toArray();
       res.send(result);
     });
-    // get all loan for a customer by email
+    // get all loan for a customer
     app.get("/manager-loanapplication/:email", async (req, res) => {
       const email = req.params.email;
       const result = await LoanApplicationCollection.find({
